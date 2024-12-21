@@ -16,10 +16,11 @@ Including another URLconf
 """
 # from django.contrib import admin
 from django.urls import path
-from .views import index, index2
+from .views import index, index2, index3
 
 urlpatterns = [
     #    path('admin/', admin.site.urls),
     path('', index, name='index'),  # 기본 URL에 대해 index 뷰 연결
     path('index2/', index2, name='index2'),  # /index2/ URL에 대해 index2 뷰 연결
+    path('index3/', index3, name='index3'),
 ]
